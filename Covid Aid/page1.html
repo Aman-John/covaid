@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="image/fab.jpg" type="image/gif" sizes="16x16"> 
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+<style>
+ * {
+  box-sizing: border-box;
+  font-family: 'Itim', cursive;}
+  body{
+    margin:0px;
+    padding:0px;
+  }
+
+.column {
+  float: left;
+  width: 30%;
+  padding:0px;
+}
+.column1{
+ float:left;
+ width:40%; 
+ padding:15px; 
+ height: 100%;  
+ min-height:900px;
+ color: white; 
+ background-color:#696969;
+ margin-left:30%; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}   
+.slide{
+ height:100% ;width:100% ;background-repeat: no-repeat   
+}
+button
+{margin-left: 20px;
+border-radius:8px;
+background: red;
+width: 70px;
+height: 30px;
+}
+
+
+</style>
+</head>
+<title>Covid - 19</title>
+<body>
+
+<div class="row">
+  <div class="column" >
+      <img class="sticky" src="image/slide2.jpg " style="position:fixed;top:0;margin-top:30px;">
+      </div>
+  <div class="column1" id="column1">
+   <center> <h2>COVID-AID</h2></center>
+    <div>
+Fill in the survey details to the best of your knowledge , in order for us to provide you with the most suitable AID possible :    
+</div><br>
+  <form>
+    <label for="username">Username : </label>
+    <input type="text" id="username" name="username" placeholder="Username"  style="margin-left:15px"><br><br>
+    <label for="username">AGE :    </label>
+    <input type="number" id="age" name="AGE" placeholder="Age" max="100" min="5"  style="margin-left:57px"><br><br>
+    <label for="blood group">Blood Group : </label>  
+    <input type="text" id="bg" name="bloodgroup" placeholder="Blood group" ><br>    
+    <br>
+    <p>What do you think which of these catagories of symptoms you fall into :</p>
+    <div>Category 1 :
+    <input type="radio" name="category" id="cat1" value="1"><br>
+    <ul>
+    <li>Fever</li>
+    <li>Dry cough</li>
+    <li>Tiredness</li>  
+    </ul></div>
+    <br>
+    <div>Category 2 :
+    <input type="radio" name="category" id="cat2" value="2"><br>
+    <ul>
+    <li>Sore Throat</li>
+    <li>Loss of taste/smell</li>
+    <li>aches/ pains</li>
+    <li>conjuctivites</li>
+    <li>head aches</li>
+    <li>diarrhoea</li>  
+    </ul></div>
+    <br>
+    <div >Category 3:
+    <input type="radio" name="category" id="cat3" value="3"><br>
+    <ul>
+    <li>Difficulty Breathing</li>
+    <li>Chest pain/ pressure</li>
+    <li>Loss of speech/ movement</li>
+    </ul></div>
+    <br>
+    <div >Category 4:
+    <input type="radio" name="category" id="cat4" value="4"><br>
+    <ul>
+<li>Non of the above</li>
+<div>Describe your symptoms</div>
+<textarea rows="4" cols="50"></textarea>
+    </ul></div>  
+<button  type="submit" onclick="coveron()">Submit</button>
+</form>
+  </div>
+<div class="column" style="background-color:#FFFAFA">  
+<img class="sticky"  src="image/slide1.jpg" style="position:fixed ;top:0;">
+</div>
+</div>
+
+
+
+
+<script src="form.js"></script>
+</body>
+</html>

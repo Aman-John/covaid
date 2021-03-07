@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="image/fab.jpg" type="image/gif" sizes="16x16"> 
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+<style>
+ * {
+  box-sizing: border-box;
+  font-family: 'Itim', cursive;
+
+}
+  body{
+    margin:5px;
+    padding:8px;
+background-color:#1F2833;
+color: #66FCF1;
+  }
+  hr{
+  height : 5px;
+  color:white;	
+  }
+</style>
+</head>
+<title>Admin Page</title>
+<body>
+<h1 style=" text-align: center;">Admin Page </h1>
+<br>
+<div>
+<h3>People name under category 1 : </h3>	
+<ul id="slide1"></ul>	
+</div><br>
+<hr>	
+
+<div >
+<h3>People name under category 2 :</h3>	
+<ul id="slide2">
+</ul>	
+</div>	
+<br>
+<hr>
+<div >
+<h3>People name under category 3 :</h3>	
+<ul id="slide3"></ul>	
+</div><br>
+<hr>
+
+<div >
+<h3>People name under category 4 :</h3>	
+<ul id="slide4"></ul>	
+</div><br>
+
+
+
+<script>
+
+var cat11,cat12,cat13;
+var cat11 = localStorage.getItem("cat1");
+var cat12 = localStorage.getItem("cat2");
+var cat13 = localStorage.getItem("cat3");
+var cat14 = localStorage.getItem("cat4");
+ document.getElementById('slide1').innerHTML= cat11;
+ document.getElementById('slide2').innerHTML = cat12;
+document.getElementById('slide3').innerHTML = cat13;
+document.getElementById('slide4').innerHTML = cat14;
+
+
+</script>
+</body>
+
+</html>
